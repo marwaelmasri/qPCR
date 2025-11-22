@@ -102,7 +102,7 @@ qpcr_OL_removed["geomean"] = stats.gmean(qpcr_OL_removed[["EIF4A2", "UBC"]], axi
 # dct
 qpcr_OL_removed["dct"] = qpcr_OL_removed["CT"] - qpcr_OL_removed["geomean"]
 
-# dct.con with a function, con is the control you want to nomralise to.
+# dct.con with a function, con is the control you want to normalise to.
 def get_dctcon(row, df, con):
     # Filter where target == HK (fixed), and celltype matches the current row
     mask = (df["Target Name"] == row["Target Name"]) & (df["celltype"] == con)
@@ -169,5 +169,6 @@ plt.legend(handles[:2], labels[:2], title="Cell Type",
 
 plt.tight_layout()
 plt.show()
+
 
 
