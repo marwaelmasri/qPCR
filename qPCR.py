@@ -28,7 +28,7 @@ qpcr=data.iloc[44:160,:]
 qpcr.columns=header
 
 # Also filter out wells you want to exclude if you find them to be outliers.
-# Alternatively filter out i excel before import.
+# Alternatively filter out in excel before import.
 
 # Reset index
 qpcr = qpcr.reset_index(drop=True)
@@ -169,4 +169,5 @@ plt.legend(handles[:2], labels[:2], title="Cell Type",
 
 plt.tight_layout()
 plt.show()
+
 
